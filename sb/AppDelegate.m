@@ -9,7 +9,7 @@
 #import "AppDelegate.h"
 #import "SunView.h"
 #import "ViewController.h"
-@interface AppDelegate ()<SunDelegate>
+@interface AppDelegate ()<SunDelegate>//实现协议
 
 @end
 
@@ -29,17 +29,21 @@
     SunView *v=[[SunView alloc]init];
     v.sunDelegate=self;
     [v test];
+    self.str=@"";//str是父类的协议属性
+    self.sunStr=@"";//sunStr是协议属性
+    //这俩个属性可以调1.因为实现了SunDelegate协议，2这个协议继承与FatherDelegate
     return YES;
 }
+
 -(void)sunDelegateTest
 {
-
+//协议方法
 
 }
 
 -(void)fatherDelegateTest
 {
-
+//协议方法
 
 }
 

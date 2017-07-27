@@ -14,7 +14,6 @@
 -(void)test
 {
     if ([self.sunDelegate respondsToSelector:@selector(sunDelegateTest)]){
-        
         [self.sunDelegate sunDelegateTest];
     }
     

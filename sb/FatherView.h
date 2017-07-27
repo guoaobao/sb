@@ -10,6 +10,7 @@
 
 @protocol FatherDelegate <NSObject>
 
+@property(nonatomic,strong) NSString *str;
 -(void)fatherDelegateTest;
 
 @end
